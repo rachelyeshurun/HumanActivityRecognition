@@ -78,6 +78,8 @@ mergedData <- select(mergedData, -activity)
 grouped <- group_by(mergedData, subject, activity.name)
 summarized <- summarise_each(grouped, funs(mean))
 
+summarized
+
 #for uploading to coursera
-write.table(summarized, file="tidy.txt", row.name=FALSE) 
+#write.table(summarized, file="tidy.txt", row.name=FALSE) 
 
