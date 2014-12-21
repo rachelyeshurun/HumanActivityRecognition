@@ -27,14 +27,15 @@ The data was cleaned up using a R script: run_analysis.R which does the followin
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ####The Variables
-There are 68 variables in this data set 
-1. activity.name  - one of 6 possible: WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
+There are 68 variables in this data set:
 
-2. subject - each subject is numbered: 1 through 30
+1. activity.name  - one of 6 possible categories: WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
 
-3-68 tBodyAcc-mean()-X, tBodyAcc-mean()-Ym tBodyAcc-mean()-Z etc. See below for complete list of names.
+2. subject - numerical identification of each subject. Range is 1 through 30.
 
-The original data was limited - only measurements on the mean and standard deviation were analysed. 
+3. .. 68  tBodyAcc-mean()-X, tBodyAcc-mean()-Ym tBodyAcc-mean()-Z etc. See below for complete list of names.
+
+From the original data which had 561 measurements,  only measurements on the mean and standard deviation were analysed. 
 
 These variables were chosen by selecting from the original variable names only those with 'mean()' or 'std()' in their name.
 
